@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      133 字
+      119 字
     </span>
   
 
@@ -220,34 +220,9 @@
             <h1 style="display: none">my-first-blog</h1>
             
             <div class="markdown-body" id="post-body">
-              <p>这是博客测试的一道程序题：</p>
-<pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
-<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
-<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll;
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> INF 0x3f3f3f3f</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> m(a) memset(a,0,sizeof(a))</span>
-<span class="hljs-keyword">int</span> a[<span class="hljs-number">200005</span>];
-<span class="hljs-keyword">int</span> b[<span class="hljs-number">200005</span>];
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;
-    ios::sync_with_stdio(<span class="hljs-literal">false</span>);<span class="hljs-built_in">cin</span>.tie(<span class="hljs-number">0</span>);
-    <span class="hljs-keyword">int</span> n;<span class="hljs-built_in">cin</span>&gt;&gt;n;
-    <span class="hljs-built_in">map</span>&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt;mp;
-    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;
-        <span class="hljs-built_in">cin</span>&gt;&gt;a[i];
-        mp[a[i]]=i;
-    &#125;
-    <span class="hljs-keyword">int</span> last=<span class="hljs-number">0</span>;
-    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;
-        <span class="hljs-keyword">int</span> x;<span class="hljs-built_in">cin</span>&gt;&gt;x;
-        <span class="hljs-keyword">if</span>(mp[x]&gt;last)&#123;
-            <span class="hljs-built_in">cout</span>&lt;&lt;mp[x]-last&lt;&lt;<span class="hljs-string">&#x27; &#x27;</span>;
-            last=mp[x];
-        &#125;
-        <span class="hljs-keyword">else</span>&#123;
-            <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-number">0</span>&lt;&lt;<span class="hljs-string">&#x27; &#x27;</span>;
-        &#125;
-    &#125;
-&#125;</code></pre>
+              <h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>博客的一篇代码测试</p>
+<p>```cpp<br>#include &lt;bits/stdc++.h&gt;<br>using namespace std;<br>typedef long long ll;<br>#define INF 0x3f3f3f3f<br>#define m(a) memset(a,0,sizeof(a))<br>int a[200005];<br>int b[200005];<br>int main(){<br>    ios::sync_with_stdio(false);cin.tie(0);<br>    int n;cin&gt;&gt;n;<br>    map&lt;int,int&gt;mp;<br>    for(int i=1;i&lt;=n;i++){<br>        cin&gt;&gt;a[i];<br>        mp[a[i]]=i;<br>    }<br>    int last=0;<br>    for(int i=1;i&lt;=n;i++){<br>        int x;cin&gt;&gt;x;<br>        if(mp[x]&gt;last){<br>            cout&lt;&lt;mp[x]-last&lt;&lt;’ ‘;<br>            last=mp[x];<br>        }<br>        else{<br>            cout&lt;&lt;0&lt;&lt;’ ‘;<br>        }<br>    }<br>}</p>
+
             </div>
             <hr>
             <div>
